@@ -37,14 +37,14 @@ class _ButtonFoulState extends State<ButtonFoul> {
           context.read<FoulBasketball>().update(widget.team);
           if (widget.team == 1) {
             Map<String, String> alldatas = {
-              'ScoreA':
+              'FoulA':
                   context.read<FoulBasketball>().getFoulTeam1.toString(),
             };
             dbRef.update(alldatas);
           }
           if (widget.team == 2) {
             Map<String, String> alldatas = {
-              'ScoreB':
+              'FoulB':
                   context.read<FoulBasketball>().getFoulTeam2.toString(),
             };
             dbRef.update(alldatas);
@@ -54,14 +54,14 @@ class _ButtonFoulState extends State<ButtonFoul> {
           context.read<FoulFutsal>().update(widget.team);
           if (widget.team == 1) {
             Map<String, String> alldatas = {
-              'ScoreA':
+              'FoulA':
                   context.read<FoulFutsal>().getFoulTeam1.toString(),
             };
             dbRef.update(alldatas);
           }
           if (widget.team == 2) {
             Map<String, String> alldatas = {
-              'ScoreB':
+              'FoulB':
                   context.read<FoulFutsal>().getFoulTeam2.toString(),
             };
             dbRef.update(alldatas);

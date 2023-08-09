@@ -40,14 +40,14 @@ class _ButtonSetState extends State<ButtonSet> {
             context.read<SetVolleyball>().update(widget.team);
             if (widget.team == 1) {
               Map<String, String> alldatas = {
-                'ScoreA':
+                'SetA':
                     context.read<SetVolleyball>().getSetTeam1.toString(),
               };
               dbRef.update(alldatas);
             }
             if (widget.team == 2) {
               Map<String, String> alldatas = {
-                'ScoreB':
+                'SetB':
                     context.read<SetVolleyball>().getSetTeam2.toString(),
               };
               dbRef.update(alldatas);
@@ -57,14 +57,14 @@ class _ButtonSetState extends State<ButtonSet> {
             context.read<SetBadminton>().update(widget.team);
             if (widget.team == 1) {
               Map<String, String> alldatas = {
-                'ScoreA':
+                'SetA':
                     context.read<SetBadminton>().getSetTeam1.toString(),
               };
               dbRef.update(alldatas);
             }
             if (widget.team == 2) {
               Map<String, String> alldatas = {
-                'ScoreB':
+                'SetB':
                     context.read<SetBadminton>().getSetTeam2.toString(),
               };
               dbRef.update(alldatas);
@@ -74,14 +74,14 @@ class _ButtonSetState extends State<ButtonSet> {
             context.read<SetTabletennis>().update(widget.team);
             if (widget.team == 1) {
               Map<String, String> alldatas = {
-                'ScoreA':
+                'SetA':
                     context.read<SetTabletennis>().getSetTeam1.toString(),
               };
               dbRef.update(alldatas);
             }
             if (widget.team == 2) {
               Map<String, String> alldatas = {
-                'ScoreB':
+                'SetB':
                     context.read<SetTabletennis>().getSetTeam2.toString(),
               };
               dbRef.update(alldatas);
