@@ -45,7 +45,7 @@ class _SplashState extends State<Splash> {
                 radius: 20,
               ),
             const Text(
-              '\nDIGITAL SCOREBORADSSS',
+              '\nDIGITAL SCOREBORAD',
               style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
